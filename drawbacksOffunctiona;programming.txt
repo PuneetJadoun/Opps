@@ -1,0 +1,11 @@
+Drawbacks of Functional / Procedural Programming
+
+1. Does not model real world problem very well.
+
+2. If a new data is added, all the functions needs to be modified to access the Data.
+
+3. Global data is accessible to all the functions.
+
+4. No clear boundaries and well definition of code.
+
+5. No Modularity: Functional programs can become monolithic and difficult to maintain as they grow in complexity.
