@@ -1,0 +1,160 @@
+Inheritance
+
+1. Similar to Inheritance in Life.
+
+2. Child inherits attributes and behaviours from Parent.
+
+3. Inheritance is a way to create a Class from existing Class.
+
+4. The Derived / Child / Sub class inherits some attributes and behaviours from Base / Parent / Super Class, and may have more specialised attributes and behaviours.
+
+
+When do we use Inheritance?
+
+1. After grasping the definition, the pivotal question arises: "When do we use inheritance?"
+
+2. Use inheritance whenever an IS-A relationship is identified between objects.
+
+3. Inheritance is applied where objects exhibit a hierarchical relationship, signifying a specialized-generalized connection.
+
+4. Do not Reinvent the Wheel.
+
+
+
+
+
+Protected Members
+
+1. Members declared protected are accessible within class itself & to its derived class.
+
+2. The protected access modifier serves two primary purposes:
+
+   1. Encapsulation:
+      Like the private access modifier, protected provides a level of
+      encapsulation, ensuring that certain class members are not directly
+      accessible from outside the class. This promotes data hiding and
+      prevents external code from modifying or accessing sensitive data
+      directly.
+
+   2. Inheritance:
+      Unlike private, protected members can be inherited by derived
+      classes. This means that subclasses have limited access to these
+      members, allowing them to build upon the base class's functionality
+      while maintaining some level of data integrity and control.
+
+
+
+
+
+
+// only in c++ not in java
+    Mode of Inheritance
+
+1. What scope of attributes of parents will be inherited to child class and with what scope?
+
++------------+------------------+-------------------+---------------+
+| Base Class | Private Mode     | Protected Mode    | Public Mode   |
++------------+------------------+-------------------+---------------+
+| Private    | Not Inherited    | Not Inherited     | Not Inherited |
+| Protected  | Private          | Protected         | Protected     |
+| Public     | Private          | Protected         | Public        |
++------------+------------------+-------------------+---------------+
+
+
+Protected Members
+
+1. Members declared protected are accessible within class itself & to its derived class.
+
+2. The protected access modifier serves two primary purposes:
+
+   1. Encapsulation:
+      Like the private access modifier, protected provides a level of
+      encapsulation, ensuring that certain class members are not directly
+      accessible from outside the class. This promotes data hiding and
+      prevents external code from modifying or accessing sensitive data
+      directly.
+
+   2. Inheritance:
+      Unlike private, protected members can be inherited by derived
+      classes. This means that subclasses have limited access to these
+      members, allowing them to build upon the base class's functionality
+      while maintaining some level of data integrity and control.
+
+
+      Types of Inheritance
+
+1. Single Inheritance
+
+        ClassA
+           ▲
+           │
+        ClassB
+
+
+2. Multilevel Inheritance
+
+        ClassA
+           ▲
+           │
+        ClassB
+           ▲
+           │
+        ClassC
+
+
+3. Hierarchical Inheritance
+
+           ClassA
+          ▲     ▲
+         /       \
+    ClassB     ClassC
+
+ 
+4. Multiple Inheritance     // Not in java
+
+    ClassA     ClassB
+       ▲         ▲
+        \       /
+         \     /
+         ClassC
+
+
+5. Hybrid Inheritance
+
+            ClassA
+           ▲     ▲
+          /       \
+     ClassB     ClassC
+          ▲       ▲
+           \     /
+            \   /
+            ClassD
+
+
+
+
+
+Advantages
+
+1. Reusability:
+   Avoids duplicating methods in child classes that already exist in parent
+   classes.
+
+2. Code modification:
+   Localises changes, preventing inconsistencies throughout the program.
+
+3. Extensibility:
+   Allows easy enhancement or upgrade of specific parts of a product without
+   altering core attributes.
+
+4. Data hiding:
+   Supports encapsulation by keeping some data private in the base class,
+   preventing alteration by derived classes.
+
+
+
+class DerivedClass : accessSpecifier BaseClass   // accessSpecifier means in which mode you are inheriting attributes from base class 
+{ 
+    // Class members
+};  
+
