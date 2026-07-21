@@ -1,0 +1,13 @@
+What is OOP?
+
+1. Programming is used to solve real-world problems, how can we model real-world systems with programming languages.
+
+2. A Programming Style, involves dividing a program into pieces of objects that can communicate with each other.
+
+3. Objects based coding style, in which each object (aka, real-world entity) has its own attributes and behaviour.
+
+4. Fundamental Idea is to combine into single unit, both data and behaviour, that will promote Modularity.
+
+5. OOP promotes modularity by encapsulating data and behavior within objects. This modular approach enhances code reusability and maintainability, as objects can be reused in different parts of the program.
+
+6. OOP is LIFE (We’ll understand this on-the-go)

@@ -1,0 +1,9 @@
+Objects and Classes.
+
+1. Real world entities like cars, person, students, building etc., they all have some state and behaviour.
+
+2. For e.g., a Student named Rahul, is an real world entity, in programming, he is an object.
+
+3. What defines, how would an object look like?, there must be a Blueprint i.e., Class.
+
+4. Hence, Object is an instance of a Class.
