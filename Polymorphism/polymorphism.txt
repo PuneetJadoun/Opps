@@ -1,0 +1,90 @@
+Polymorphism in C++
+
+1. Similar to Polymorphism in Life.
+
+2. Polymorphism = Many Forms.
+
+3. The ability of a single function or Operator to work in different ways based on the object it is acting upon or actual need.
+
+4. A phenomenon that allows an object to have several different forms and behaviours.
+
+5. Types
+   1. Compile Time Polymorphism. / Static 
+   2. Runtime Polymorphism. / dynamic 
+
+
+Static Polymorphism
+
+1. Aka, Compile Time Polymorphism.
+
+2. Types
+   1. Function Overloading
+   2. Operator Overloading
+
+
+Function Overloading
+
+1. Overloading occurs when a class contains multiple methods sharing a name
+   but differing in argument count or argument type.
+
+
+
+class Add
+{
+public:
+    int sum(int x, int y)
+    {
+        return x + y;
+    }
+
+    double sum(double x, double y)
+    {
+        return x + y;
+    }
+};
+
+
+
+Runtime Polymorphism
+
+1. Function Overriding
+   - Makes function polymorphic.
+
+2. Early vs Late binding.
+
+3. Virtual Keyword
+   - Way to achieve polymorphism by deferring binding decision to runtime.
+
+4. Override keyword
+   - Helps to make the intention clear and allows the compiler to enforce
+     overriding rules, making your code safer and easier to understand.
+
+5. Upcasting / Down-casting.
+
+
+class Shape
+{
+public:
+    virtual void draw()
+    {
+        cout << "Drawing a generic shape" << endl;
+    }
+};
+
+class Circle : public Shape
+{
+public:
+    void draw() override
+    {
+        cout << "Drawing a circle" << endl;
+    }
+};
+
+class Rectangle : public Shape
+{
+public:
+    void draw() override
+    {
+        cout << "Drawing a rectangle" << endl;
+    }
+};
